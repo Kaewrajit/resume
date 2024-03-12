@@ -1,11 +1,15 @@
-import "./App.css";
-import { Header } from "./componate/header";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./page/HomePage";
 
 function App() {
   return (
-    <>
-      <Header />
-    </>
+    <Router>
+      <>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+        </Routes>
+      </>
+    </Router>
   );
 }
 
